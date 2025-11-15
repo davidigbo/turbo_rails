@@ -12,7 +12,7 @@ class QuotesTest < ApplicationSystemTestCase
   fill_in "Name", with: "Capybara quote"
   click_on "Create quote"
 
-  assert_slector "h1", text: "Quotes"
+  assert_selector "h1", text: "Quotes"
   assert_text "Capybara quote"
  end
 end
